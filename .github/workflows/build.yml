@@ -1,3 +1,4 @@
+
 name: Build SKY APK
 
 on:
@@ -25,7 +26,7 @@ jobs:
       - name: Build APK
         run: |
           gradle --version
-gradle assembleDebug --no-daemon --stacktrace --info
+          gradle assembleDebug --no-daemon --stacktrace --info
 
       - name: Save APK
         uses: actions/upload-artifact@v4
