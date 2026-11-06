@@ -10,10 +10,10 @@ android {
 
     defaultConfig {
         applicationId = "com.sky.assistant"
-        minSdk = 23
+        minSdk = 24
         targetSdk = 35
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 2
+        versionName = "1.1"
     }
 
     compileOptions {
@@ -24,4 +24,8 @@ android {
     kotlinOptions {
         jvmTarget = "17"
     }
+}
+
+dependencies {
+    implementation("dev.ffmpegkit-maintained:llama-android:0.1.1")
 }
